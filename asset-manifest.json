@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/multiplayer-spelling-bee/static/css/main.69eda509.chunk.css",
+    "main.js": "/multiplayer-spelling-bee/static/js/main.6d03144b.chunk.js",
+    "main.js.map": "/multiplayer-spelling-bee/static/js/main.6d03144b.chunk.js.map",
+    "runtime-main.js": "/multiplayer-spelling-bee/static/js/runtime-main.be9a450a.js",
+    "runtime-main.js.map": "/multiplayer-spelling-bee/static/js/runtime-main.be9a450a.js.map",
+    "static/js/2.2e9a9f33.chunk.js": "/multiplayer-spelling-bee/static/js/2.2e9a9f33.chunk.js",
+    "static/js/2.2e9a9f33.chunk.js.map": "/multiplayer-spelling-bee/static/js/2.2e9a9f33.chunk.js.map",
+    "index.html": "/multiplayer-spelling-bee/index.html",
+    "precache-manifest.a253463e019aefcc0b0cf949e64ae5c9.js": "/multiplayer-spelling-bee/precache-manifest.a253463e019aefcc0b0cf949e64ae5c9.js",
+    "service-worker.js": "/multiplayer-spelling-bee/service-worker.js",
+    "static/css/main.69eda509.chunk.css.map": "/multiplayer-spelling-bee/static/css/main.69eda509.chunk.css.map",
+    "static/js/2.2e9a9f33.chunk.js.LICENSE.txt": "/multiplayer-spelling-bee/static/js/2.2e9a9f33.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be9a450a.js",
+    "static/js/2.2e9a9f33.chunk.js",
+    "static/css/main.69eda509.chunk.css",
+    "static/js/main.6d03144b.chunk.js"
+  ]
+}
