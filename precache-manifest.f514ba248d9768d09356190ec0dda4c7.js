@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b860cb222469a99995377545fedbce2",
+    "revision": "5c5d890ca313417b7310c3ac97cb7416",
     "url": "/multiplayer-spelling-bee/index.html"
   },
   {
