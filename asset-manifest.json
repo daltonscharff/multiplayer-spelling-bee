@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/multiplayer-spelling-bee/static/css/main.69eda509.chunk.css",
-    "main.js": "/multiplayer-spelling-bee/static/js/main.a4915ada.chunk.js",
-    "main.js.map": "/multiplayer-spelling-bee/static/js/main.a4915ada.chunk.js.map",
+    "main.js": "/multiplayer-spelling-bee/static/js/main.93273f6e.chunk.js",
+    "main.js.map": "/multiplayer-spelling-bee/static/js/main.93273f6e.chunk.js.map",
     "runtime-main.js": "/multiplayer-spelling-bee/static/js/runtime-main.be9a450a.js",
     "runtime-main.js.map": "/multiplayer-spelling-bee/static/js/runtime-main.be9a450a.js.map",
-    "static/js/2.c22e703c.chunk.js": "/multiplayer-spelling-bee/static/js/2.c22e703c.chunk.js",
-    "static/js/2.c22e703c.chunk.js.map": "/multiplayer-spelling-bee/static/js/2.c22e703c.chunk.js.map",
+    "static/js/2.cef16fd3.chunk.js": "/multiplayer-spelling-bee/static/js/2.cef16fd3.chunk.js",
+    "static/js/2.cef16fd3.chunk.js.map": "/multiplayer-spelling-bee/static/js/2.cef16fd3.chunk.js.map",
     "index.html": "/multiplayer-spelling-bee/index.html",
-    "precache-manifest.6c8b9918b5a8b30122fdd40054ac2aad.js": "/multiplayer-spelling-bee/precache-manifest.6c8b9918b5a8b30122fdd40054ac2aad.js",
+    "precache-manifest.90e2e67e4a01fe3921a151f1575ff611.js": "/multiplayer-spelling-bee/precache-manifest.90e2e67e4a01fe3921a151f1575ff611.js",
     "service-worker.js": "/multiplayer-spelling-bee/service-worker.js",
     "static/css/main.69eda509.chunk.css.map": "/multiplayer-spelling-bee/static/css/main.69eda509.chunk.css.map",
-    "static/js/2.c22e703c.chunk.js.LICENSE.txt": "/multiplayer-spelling-bee/static/js/2.c22e703c.chunk.js.LICENSE.txt"
+    "static/js/2.cef16fd3.chunk.js.LICENSE.txt": "/multiplayer-spelling-bee/static/js/2.cef16fd3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.be9a450a.js",
-    "static/js/2.c22e703c.chunk.js",
+    "static/js/2.cef16fd3.chunk.js",
     "static/css/main.69eda509.chunk.css",
-    "static/js/main.a4915ada.chunk.js"
+    "static/js/main.93273f6e.chunk.js"
   ]
 }
