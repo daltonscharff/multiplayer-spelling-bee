@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5c5d890ca313417b7310c3ac97cb7416",
+    "revision": "0e0af839d92d194c2e4c16b8d02b479a",
     "url": "/multiplayer-spelling-bee/index.html"
   },
   {
-    "revision": "15a55beb3b06da4d1bfc",
+    "revision": "87d39f83d2723e4b2074",
     "url": "/multiplayer-spelling-bee/static/css/main.69eda509.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/multiplayer-spelling-bee/static/js/2.c22e703c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "15a55beb3b06da4d1bfc",
-    "url": "/multiplayer-spelling-bee/static/js/main.00edfac4.chunk.js"
+    "revision": "87d39f83d2723e4b2074",
+    "url": "/multiplayer-spelling-bee/static/js/main.a4915ada.chunk.js"
   },
   {
     "revision": "57ac630ef986212f5579",
