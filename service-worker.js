@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/multiplayer-spelling-bee/precache-manifest.90e2e67e4a01fe3921a151f1575ff611.js"
+  "/multiplayer-spelling-bee/precache-manifest.8f3b11189bd1bc3d2e804929765885be.js"
 );
 
 self.addEventListener('message', (event) => {
