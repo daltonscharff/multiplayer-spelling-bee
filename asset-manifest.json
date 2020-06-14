@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/multiplayer-spelling-bee/static/css/main.69eda509.chunk.css",
-    "main.js": "/multiplayer-spelling-bee/static/js/main.d2754162.chunk.js",
-    "main.js.map": "/multiplayer-spelling-bee/static/js/main.d2754162.chunk.js.map",
+    "main.css": "/multiplayer-spelling-bee/static/css/main.73e381ae.chunk.css",
+    "main.js": "/multiplayer-spelling-bee/static/js/main.8ed9bcc4.chunk.js",
+    "main.js.map": "/multiplayer-spelling-bee/static/js/main.8ed9bcc4.chunk.js.map",
     "runtime-main.js": "/multiplayer-spelling-bee/static/js/runtime-main.be9a450a.js",
     "runtime-main.js.map": "/multiplayer-spelling-bee/static/js/runtime-main.be9a450a.js.map",
-    "static/js/2.cef16fd3.chunk.js": "/multiplayer-spelling-bee/static/js/2.cef16fd3.chunk.js",
-    "static/js/2.cef16fd3.chunk.js.map": "/multiplayer-spelling-bee/static/js/2.cef16fd3.chunk.js.map",
+    "static/js/2.9b258b9e.chunk.js": "/multiplayer-spelling-bee/static/js/2.9b258b9e.chunk.js",
+    "static/js/2.9b258b9e.chunk.js.map": "/multiplayer-spelling-bee/static/js/2.9b258b9e.chunk.js.map",
     "index.html": "/multiplayer-spelling-bee/index.html",
-    "precache-manifest.acd25c6d1c6fd363b3b9045f924c6195.js": "/multiplayer-spelling-bee/precache-manifest.acd25c6d1c6fd363b3b9045f924c6195.js",
+    "precache-manifest.56833abc414ada82ff4882539e5afd18.js": "/multiplayer-spelling-bee/precache-manifest.56833abc414ada82ff4882539e5afd18.js",
     "service-worker.js": "/multiplayer-spelling-bee/service-worker.js",
-    "static/css/main.69eda509.chunk.css.map": "/multiplayer-spelling-bee/static/css/main.69eda509.chunk.css.map",
-    "static/js/2.cef16fd3.chunk.js.LICENSE.txt": "/multiplayer-spelling-bee/static/js/2.cef16fd3.chunk.js.LICENSE.txt"
+    "static/css/main.73e381ae.chunk.css.map": "/multiplayer-spelling-bee/static/css/main.73e381ae.chunk.css.map",
+    "static/js/2.9b258b9e.chunk.js.LICENSE.txt": "/multiplayer-spelling-bee/static/js/2.9b258b9e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.be9a450a.js",
-    "static/js/2.cef16fd3.chunk.js",
-    "static/css/main.69eda509.chunk.css",
-    "static/js/main.d2754162.chunk.js"
+    "static/js/2.9b258b9e.chunk.js",
+    "static/css/main.73e381ae.chunk.css",
+    "static/js/main.8ed9bcc4.chunk.js"
   ]
 }
