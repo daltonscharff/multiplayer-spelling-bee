@@ -11,10 +11,10 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
 
-const init = async (db, date) => {
+const init = async (db, date, force=false) => {
     let day = await db.readDay(date);
 
-    if (!day) {
+    if (!day || force) {
         console.log('scraping');
         const scraper = new Scraper();
         const scrapedData = await scraper.scrape();
@@ -146,7 +146,7 @@ let gameDate = getGameDate();
 
     app.get('/refresh', async (req, res) => {
         const date = getGameDate();
-        await init(db, "1970-01-01");
+        await init(db, "1970-01-01", true);
         res.send(date);
     })
 
