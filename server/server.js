@@ -146,7 +146,7 @@ let gameDate = getGameDate();
 
     app.get('/refresh', async (req, res) => {
         const date = getGameDate();
-        await init(db, date);
+        await init(db, "1970-01-01");
         res.send(date);
     })
 
