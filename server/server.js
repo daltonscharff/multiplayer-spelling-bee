@@ -144,6 +144,12 @@ let gameDate = getGameDate();
         res.send('Server is running...');
     });
 
+    app.get('/refresh', async (req, res) => {
+        const date = getGameDate();
+        await init(db, date);
+        res.send(date);
+    })
+
     app.get('/status', async (req, res) => {
         const found = await db.readFoundWords(req.query.roomId) || [];
         const foundWords = found.map(found => found.word);
