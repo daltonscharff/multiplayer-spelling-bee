@@ -11,7 +11,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
 
-const init = async (db, date, force=false) => {
+const init = async (db, date, force = false) => {
     let day = await db.readDay(date);
 
     if (!day || force) {
@@ -60,13 +60,7 @@ const checkInWordList = (word, answers) => {
 
 const getGameDate = () => {
     const now = new moment();
-    let date;
-    if (now.isBefore(gameRestartTime)) {
-        date = now.subtract(1, 'day');
-    } else {
-        date = now;
-    }
-    return date.format('YYYY-MM-DD');
+    return now.format('YYYY-MM-DD');
 };
 
 const checkForRestart = async (io, roomId) => {
@@ -92,7 +86,7 @@ let answers = [];
 let letters = [];
 let centerLetter = '';
 
-const gameRestartTime = new moment().set({ hours: 17, minutes: 0, seconds: 0 });
+// const gameRestartTime = new moment().set({ hours: 17, minutes: 0, seconds: 0 });
 let gameDate = getGameDate();
 
 (async () => {
@@ -104,7 +98,7 @@ let gameDate = getGameDate();
 
     io.on('connection', (socket) => {
         socket.on('initRequest', (async ({ roomId }) => {
-            checkForRestart(io, roomId);
+            // checkForRestart(io, roomId);
             socket.join(roomId);
             socket.emit('initResponse', {
                 gameDate,
@@ -145,9 +139,19 @@ let gameDate = getGameDate();
     });
 
     app.get('/refresh', async (req, res) => {
-        const date = getGameDate();
-        await init(db, "1970-01-01", true);
-        res.send(date);
+        if (req.query.token === process.env.REFRESH_TOKEN) {
+            await init(db, "1970-01-01", true);
+            res.send({
+                refreshed: true,
+                data: {
+                    gameDate,
+                    letters,
+                    centerLetter
+                }
+            });
+        } else {
+            res.sendStatus(403);
+        }
     })
 
     app.get('/status', async (req, res) => {
