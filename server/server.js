@@ -13,26 +13,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 const init = async (db, date, force = false) => {
     let day = await db.readDay(date);
-
-    if (!day || force) {
-        console.log('scraping');
-        const scraper = new Scraper();
-        const scrapedData = await scraper.scrape();
-
-        answers = scrapedData.answers;
-        letters = scrapedData.letters;
-        centerLetter = scrapedData.centerLetter;
-
-        await db.clear();
-        const writeDayPromise = db.writeDay(date, letters, centerLetter);
-        const writeAnswerPromise = db.writeWords(answers);
-        await Promise.all([writeDayPromise, writeAnswerPromise]);
-    } else {
-        console.log('reading');
-        answers = await db.readWords();
-        letters = day.letters;
-        centerLetter = day.center_letter;
-    }
+    answers = await db.readWords();
+    letters = day.letters;
+    centerLetter = day.center_letter;
 };
 
 const checkIfFound = (word, foundWords) => {
@@ -90,6 +73,7 @@ let centerLetter = '';
 let gameDate = getGameDate();
 
 (async () => {
+    console.log("Server starting...")
     await init(db, gameDate);
 
     const app = express();
