@@ -11,12 +11,26 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
 
-const init = async (db, date, force = false) => {
-    let day = await db.readDay(date);
+const init = async (db) => {
+    let day = await db.readDay();
     answers = await db.readWords();
     letters = day.letters;
     centerLetter = day.center_letter;
 };
+
+const scrape = async (db) => {
+    const scraper = new Scraper();
+    const scrapedData = await scraper.scrape();
+
+    answers = scrapedData.answers;
+    letters = scrapedData.letters;
+    centerLetter = scrapedData.centerLetter;
+
+    await db.clear();
+    const writeDayPromise = db.writeDay(date, letters, centerLetter);
+    const writeAnswerPromise = db.writeWords(answers);
+    await Promise.all([writeDayPromise, writeAnswerPromise]);
+}
 
 const checkIfFound = (word, foundWords) => {
     return foundWords.find((row) => row.word === word);
@@ -124,7 +138,8 @@ let gameDate = getGameDate();
 
     app.get('/refresh', async (req, res) => {
         if (req.query.token === process.env.REFRESH_TOKEN) {
-            await init(db, "1970-01-01", true);
+            await scrape(db);
+            await init(db);
             res.send({
                 refreshed: true,
                 data: {
