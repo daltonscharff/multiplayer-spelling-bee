@@ -19,11 +19,10 @@ class Db {
     );
   }
 
-  async writeDay(date, letters, centerLetter) {
+  async writeDay(letters, centerLetter) {
     let sql =
-      "INSERT INTO days (date, letters, center_letter) VALUES ($1, $2, $3) RETURNING id";
+      "INSERT INTO days (date, letters, center_letter) VALUES (current_timestamp, $1, $2) RETURNING id";
     let result = await this.pool.query(sql, [
-      date,
       JSON.stringify(letters),
       centerLetter,
     ]);
