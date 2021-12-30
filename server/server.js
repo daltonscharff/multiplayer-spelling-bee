@@ -13,6 +13,10 @@ if (process.env.NODE_ENV !== "production") {
 
 const init = async (db) => {
   let day = await db.readDay();
+  if (day === undefined) {
+    await scrape(db);
+    day = await db.readDay();
+  }
   answers = await db.readWords();
   letters = day.letters;
   centerLetter = day.center_letter;
