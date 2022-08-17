@@ -1,4 +1,10 @@
 # multiplayer-spelling-bee
+
+
+**NOTICE: This project has been archived and replaced by [spell-together](https://github.com/daltonscharff/spell-together).**
+
+------------
+
 An implementation of the [New York Times Spelling Bee](https://www.nytimes.com/puzzles/spelling-bee) allowing for multiple players to cooperatively beat the puzzle.
 
 The backend is hosted on Heroku and is built on Node. The frontend is hosted on Github Pages and built with React. The services interact via Socket.IO, allowing for multidirectional communication without the frontend needing to poll for updates.
